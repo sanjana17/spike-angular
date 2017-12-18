@@ -1,0 +1,20 @@
+
+<div class="sidebar-wrapper">
+    <mat-toolbar color="primary">
+        <div class="logo-img">
+            <img src="../../assets/chef.png" alt="">
+        </div>
+        <span fxFlex="10"></span>
+        CHEF
+        <span fxFlex="20"></span>
+        <mat-icon>arrow_back</mat-icon>
+    </mat-toolbar>
+    <ul class="nav">
+        <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="bordersidenavtag">
+            <a [routerLink]="[menuItem.path]">
+              <mat-icon>{{menuItem.icon}}</mat-icon>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,39 @@
+.mat-toolbar{
+  background-color: lightslategray;
+  color:white;
+  font-size: 20px;
+}
+.userContainer{
+  padding-bottom:50px;
+  font-size: 25px;
+}
+.mat-toolbar{
+  top: 0;
+  z-index: -1;
+}
+
+.toolbarbutton{
+  background-color: lightslategray;
+  border-color: lightslategrey;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.bordersidenavtag{
+  border: 3px;
+  border-color: black;
+  margin:9px;
+}
+ul{
+  list-style-type: none;
+  margin: 0px;
+}
+li{
+  display: list-item;
+}

@@ -1,0 +1,25 @@
+<mat-tab-group fxFlex="80">
+  <mat-tab label="Feed Information">
+    <div class="example-container mat-elevation-z3">
+      <mat-table #table [dataSource]="dataSource">
+        <ng-container matColumnDef="key">
+          <mat-header-cell *matHeaderCellDef> key </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.key}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="value">
+          <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.value}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    </div>
+  </mat-tab>
+  <mat-tab label="Customize feed">
+
+  </mat-tab>
+  <mat-tab label="Track the Progress">
+
+  </mat-tab>
+</mat-tab-group>
